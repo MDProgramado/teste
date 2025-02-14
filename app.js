@@ -12,6 +12,7 @@ const estado = {
 
 function mostrarTela(tag, texto) {
     const elemento = document.querySelector(tag);
+
     if (elemento) {
         elemento.textContent = texto;
     }
@@ -123,7 +124,7 @@ function finalizarCalculos() {
     
    
     estado.consumoLitros = estado.distancia / estado.consumo;
-    estado.valorMenor = Math.min(...estado.valoresPostos);
+    estado.valorMenor = Math.ma(...estado.valoresPostos);
     estado.med = estado.valoresPostos.reduce((a, b) => a + b, 0) / estado.postos;
     estado.gastos = 2 * (estado.consumoLitros * estado.valorMenor);
 

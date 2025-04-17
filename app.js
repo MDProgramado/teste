@@ -110,7 +110,7 @@ function consumoMedio() {
 function quantidadePostos() {
     toggleElementos();
     limparEntrada();
-    mostrarTela("#mensagem", "Digite a quantidade de postos pesquisados:");
+    mostrarTela("#mensagem", "Digite a quantidade de postos pesquisados do valor da gasolina:");
 }
 
 function valores() {

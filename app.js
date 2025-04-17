@@ -97,20 +97,20 @@ function iniciarCalculo() {
     
     document.getElementById('botaoIniciar').textContent = 'Reiniciar';
     toggleElementos();
-    mostrarTela("#mensagem", "Distância casa-trabalho (km):");
+    mostrarTela("#mensagem", "Distância de sua casa até o trabalho é (km):");
     document.getElementById('confirmar').onclick = proximoPasso;
 }
 
 function consumoMedio() {
     toggleElementos();
     limparEntrada();
-    mostrarTela("#mensagem", "Consumo médio do veículo (km/L):");
+    mostrarTela("#mensagem", "Consumo médio do veículo é (km/L):");
 }
 
 function quantidadePostos() {
     toggleElementos();
     limparEntrada();
-    mostrarTela("#mensagem", "Quantidade de postos pesquisados:");
+    mostrarTela("#mensagem", "Digite a quantidade de postos pesquisados:");
 }
 
 function valores() {
@@ -130,8 +130,8 @@ function finalizarCalculos() {
 
     mostrarTela("#mensagem", 
         `RESULTADO:
-        - Litros necessários: ${estado.consumoLitros.toFixed(2)}L
-        - Menor preço: R$ ${estado.valorMenor.toFixed(2)}
-        - Média de preços: R$ ${estado.med.toFixed(2)}
-        - Gasto diário: R$ ${estado.gastos.toFixed(2)}`);
+        - Litros necessários para chegar na empresa é de : ${estado.consumoLitros.toFixed(2)}L
+        - Menor preço dos postos pesquisados foi: R$ ${estado.valorMenor.toFixed(2)}
+        - Média de preços da gasolina é: R$ ${estado.med.toFixed(2)}
+        - Gasto diário para chegar até a empresa é : R$ ${estado.gastos.toFixed(2)}`);
 }

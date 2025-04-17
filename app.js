@@ -97,7 +97,7 @@ function iniciarCalculo() {
     
     document.getElementById('botaoIniciar').textContent = 'Reiniciar';
     toggleElementos();
-    mostrarTela("#mensagem", "Distância de sua casa até o trabalho é (km):");
+    mostrarTela("#mensagem", "Digite a distância de sua casa até o trabalho  (km):");
     document.getElementById('confirmar').onclick = proximoPasso;
 }
 
